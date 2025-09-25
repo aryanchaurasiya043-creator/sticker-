@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Sticker Designer Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .demo-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #007bff;
+        }
+        .code-block {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚗 Vehicle Sticker Designer - Interactive Demo</h1>
+    
+    <div class="demo-section">
+        <h2>🚀 Quick Start</h2>
+        <p>To get the Vehicle Sticker Designer running on your system:</p>
+        <div class="code-block">
+# 1. Navigate to the project directory
+cd vehicle-sticker-designer
+
+# 2. Install dependencies (requires Node.js)
+npm install
+
+# 3. Start the development server
+npm run dev
+
+# 4. Open http://localhost:3000 in your browser
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>✨ Key Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🎨 Interactive Canvas</h3>
+                <p>Powered by Fabric.js for smooth drag-and-drop sticker placement with real-time transformations.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🚗 Multiple Vehicle Types</h3>
+                <p>Pre-loaded vehicles (Cars, Bikes, Trucks) or upload your own vehicle images.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔧 Advanced Controls</h3>
+                <p>Precise opacity, rotation, scaling, and flip controls for perfect sticker positioning.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📱 Responsive Design</h3>
+                <p>Optimized for desktop, tablet, and mobile devices with adaptive layouts.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌙 Theme Support</h3>
+                <p>Dark and light mode support with smooth transitions and user preference saving.</p>
+            </div>
+            <div class="feature-card">
+                <h3>💾 Export & Share</h3>
+                <p>Download high-resolution designs or generate shareable links for collaboration.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>🎯 Usage Workflow</h2>
+        <ol>
+            <li><strong>Select Vehicle:</strong> Choose from predefined models or upload custom vehicle image</li>
+            <li><strong>Browse Stickers:</strong> Explore categorized sticker collections (Flames, Quotes, Logos, etc.)</li>
+            <li><strong>Design Creation:</strong> Drag, drop, and transform stickers on your vehicle</li>
+            <li><strong>Fine-tuning:</strong> Use precision controls for opacity, rotation, and scaling</li>
+            <li><strong>Export/Share:</strong> Download your design or share via generated link</li>
+        </ol>
+    </div>
+
+    <div class="demo-section">
+        <h2>🛠️ Technical Architecture</h2>
+        <ul>
+            <li><strong>Frontend:</strong> React 18 with modern hooks and context API</li>
+            <li><strong>Canvas Engine:</strong> Fabric.js for interactive graphics manipulation</li>
+            <li><strong>Styling:</strong> Tailwind CSS with custom component system</li>
+            <li><strong>File Handling:</strong> React Dropzone for drag-and-drop uploads</li>
+            <li><strong>Build Tool:</strong> Vite for fast development and optimized builds</li>
+        </ul>
+    </div>
+
+    <div class="demo-section">
+        <h2>🎨 Design Philosophy</h2>
+        <p>The application follows modern UX principles:</p>
+        <ul>
+            <li><strong>Intuitive Interface:</strong> Clean, Figma/Canva-inspired design</li>
+            <li><strong>Progressive Disclosure:</strong> Advanced features accessible when needed</li>
+            <li><strong>Immediate Feedback:</strong> Real-time preview of all modifications</li>
+            <li><strong>Accessibility:</strong> Keyboard navigation and screen reader support</li>
+            <li><strong>Performance:</strong> Optimized rendering and efficient state management</li>
+        </ul>
+    </div>
+
+    <div class="demo-section">
+        <h2>🔮 Future Enhancements</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>👤 User Accounts</h3>
+                <p>Save design history and preferences across sessions</p>
+            </div>
+            <div class="feature-card">
+                <h3>🖨️ Print Integration</h3>
+                <p>Direct ordering of physical stickers with print preview</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎭 Advanced Effects</h3>
+                <p>Shadows, borders, and 3D transformations for stickers</p>
+            </div>
+            <div class="feature-card">
+                <h3>📝 Text Editor</h3>
+                <p>Custom text with fonts, effects, and typography controls</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>💡 Demo Tips</h2>
+        <div style="background: #e3f2fd; padding: 15px; border-radius: 6px;">
+            <ul>
+                <li>Try the dark mode toggle for different design perspectives</li>
+                <li>Upload your own vehicle photos for personalized designs</li>
+                <li>Use the undo/redo buttons to experiment freely</li>
+                <li>Test mobile responsiveness by resizing your browser</li>
+                <li>Experiment with sticker layering and opacity for depth effects</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>🚀 Ready to Start?</h2>
+        <p>Follow the installation steps above and start creating amazing vehicle designs!</p>
+        <div class="code-block">
+# Quick test to verify everything is working:
+npm run dev
+
+# Build for production when ready:
+npm run build
+        </div>
+    </div>
+
+    <footer style="text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #ddd;">
+        <p>🎨 <strong>Vehicle Sticker Designer</strong> - Built with React, Fabric.js & Tailwind CSS</p>
+        <p>Happy Designing! 🚗✨</p>
+    </footer>
+</body>
+</html>
